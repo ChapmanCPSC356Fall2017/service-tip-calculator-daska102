@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.emilydaskas.tipcalculator.TipCalculator">
+
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_height="495dp"
+        android:layout_width="368dp"
+        tools:context="com.example.emilydaskas.tipcalculator.TipCalculator.MainActivity"
+        android:layout_margin="0dp"
+
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter the total price of your bill"
+        android:textSize="17sp"
+        android:background="@android:color/holo_orange_dark"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+
+        />
+        <EditText
+            android:id="@+id/et_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textDirection="rtl"
+            android:hint="$0.00"
+            />
+
+    <TextView
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:textColor="@android:color/white"
+        android:text="@string/rate_server"
+        android:textSize="17sp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+ />
+        <TextView
+            android:id="@+id/tv_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="30sp"
+            android:padding="4dp"
+            android:layout_gravity="center"/>
+        <SeekBar
+            android:id="@+id/sb_rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:max="9"
+            />
+        <Button
+            android:id="@+id/b_calculate"
+            android:onClick="calculateTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate Tip"
+            android:layout_gravity="center"
+            android:textColor="@android:color/holo_orange_dark"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:text="You should tip:"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:text="$0.00"/>
+
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
