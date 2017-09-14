@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Tip Calculator</string>
     <string name="rate_server">Rate your server on a scale from 1 to 10</string>
+    <string name="bill_total">Enter the total price of your bill</string>
+    <string name="you_should_tip">You should tip:</string>
+    <string name="calculate_tip">Calculate Tip</string>
+    <string name="rating_placeholder">5/10</string>
+    <string name="rating_max">/10</string>
 </resources>

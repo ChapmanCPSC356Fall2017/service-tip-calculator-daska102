@@ -29,7 +29,7 @@ public class TipCalculator extends AppCompatActivity {
         this.ratingSeekBar = (SeekBar) findViewById(R.id.sb_rating);
         this.calculateButton = (Button) findViewById(R.id.b_calculate);
         this.tipTextView = (TextView) findViewById(R.id.tv_tip);
-        ratingTextView.setText("5/10");
+        ratingTextView.setText(R.string.rating_placeholder);
 
         progressValue = 5;
         setUpSeekBar();
@@ -43,7 +43,7 @@ public class TipCalculator extends AppCompatActivity {
                     @Override
                     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                         progressValue = progress + 1;
-                        ratingTextView.setText(progressValue + "/10");
+                        ratingTextView.setText(progressValue + getString(R.string.rating_max));
                     }
                     @Override
                     public void onStartTrackingTouch(SeekBar seekBar) {
@@ -51,7 +51,7 @@ public class TipCalculator extends AppCompatActivity {
 
                     @Override
                     public void onStopTrackingTouch(SeekBar seekBar) {
-                        ratingTextView.setText(progressValue + "/10");
+                        ratingTextView.setText(progressValue +  getString(R.string.rating_max));
                     }
                 }
         );

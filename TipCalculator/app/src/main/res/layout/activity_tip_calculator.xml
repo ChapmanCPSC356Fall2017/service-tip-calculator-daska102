@@ -20,7 +20,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Enter the total price of your bill"
+        android:text="@string/bill_total"
         android:textSize="17sp"
         android:background="@android:color/holo_orange_dark"
         android:textColor="@android:color/white"
@@ -38,7 +38,6 @@
             android:layout_marginRight="40dp"
             android:gravity="center"
             android:layout_gravity="center"
-            android:textDirection="rtl"
             android:hint="$0.00"
             />
 
@@ -77,7 +76,7 @@
             android:onClick="calculateTip"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Calculate Tip"
+            android:text="@string/calculate_tip"
             android:layout_gravity="center"
             android:textColor="@android:color/holo_orange_dark"
             />
@@ -86,7 +85,7 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:textSize="20sp"
-            android:text="You should tip:"
+            android:text="@string/you_should_tip"
             android:layout_gravity="center"
             />
         <TextView
